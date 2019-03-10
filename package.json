@@ -1,0 +1,26 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Assignment 2 with 3rd party APIs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvh-megha/assignment2.git"
+  },
+  "author": "Megha Hegde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvh-megha/assignment2/issues"
+  },
+  "homepage": "https://github.com/mvh-megha/assignment2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.18"
+  }
+}
