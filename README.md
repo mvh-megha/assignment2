@@ -14,9 +14,10 @@ Server runs in 8080 port
     Maps comments to the respective posts
     Saves the posts along with the comments in the database
 
-Before running the project, follow the following points.
+# Before running the project, follow the following points.
 
 1. Clone the project from github repo - https://github.com/mvh-megha/assignment2
 2. Run "npm install" in the project folder.
 
-To run the project in localhost, use the script "npm start"
+# To run the project in localhost, use the script below 
+"npm start"
