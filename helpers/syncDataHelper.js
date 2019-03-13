@@ -8,13 +8,17 @@ var dbArray = [];
  */
 var getAndSToreAllUsers = async function () {
     try {
-        /** HTTP request to get users data from the 3rd party URL */
-        var optionsObject = commonUtility.getOptionsObject('/users');
-        var httpResponse = await commonUtility.httpRequest(optionsObject);
-        await saveUsersToDb(httpResponse.data);
-        await createDatabasesForUsers(httpResponse.data);
-        await matchPostToComment(httpResponse.data)
-        /** Database Operation */
+        var checkUsers = await User.find();
+        if (!checkUsers.length) {
+            /** HTTP request to get users data from the 3rd party URL */
+            var optionsObject = commonUtility.getOptionsObject('/users');
+            var httpResponse = await commonUtility.httpRequest(optionsObject);
+            await saveUsersToDb(httpResponse.data);
+            await createDatabasesForUsers(httpResponse.data);
+            await matchPostToComment(httpResponse.data)
+        } else {
+            return;
+        }
     } catch (error) {
         console.log(error)
     }

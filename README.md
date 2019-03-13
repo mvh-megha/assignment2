@@ -20,6 +20,11 @@ This is the functonality of the Project.
 * When userId is given, API will respond with posts of particular user.
 * When userId is not given, API will respond with all posts grouped by userId
 
+3. Update user avatar {url}/updateAvatar
+* This API takes 2 mandatory parameter in multipart form data. i.e., file with input image, userId of the user.
+* Checks for the mime type and uploads the image in the server local folder.
+* Updates the user document with the file path of the user avatar.
+
 ### Prerequisites
 1. NodeJS
 2. NPM

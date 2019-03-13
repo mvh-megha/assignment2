@@ -65,7 +65,11 @@ var UserSchema = new mongoose.Schema({
         bs: {
             type: String
         }
-    }]
+    }],
+    avatar: {
+        type: String,
+        default: ''
+    }
 });
 
 var User = mongoose.model('User', UserSchema);
