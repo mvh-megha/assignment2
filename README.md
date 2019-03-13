@@ -1,4 +1,4 @@
-# assignment2
+# Users and Posts
 
 This is the functonality of the Project.
 
