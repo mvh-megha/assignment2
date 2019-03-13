@@ -33,5 +33,6 @@ This is the functonality of the Project.
 ### Steps to follow before running the project
 1. Clone the project using the following command `git clone https://github.com/mvh-megha/assignment2`
 2. Navigate to the project directory and run `npm install`
-3. Run `npm start` to run the project and initiate the server.
-4. Use APIs and have fun.
+3. Create an empty directory named uploads in the mail folder path `mkdir uploads`
+4. Run `npm start` to run the project and initiate the server.
+5. Use APIs and have fun.
