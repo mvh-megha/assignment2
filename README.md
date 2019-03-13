@@ -2,7 +2,7 @@
 
 This is the functonality of the Project.
 
-####Service to fetch users, posts and comments from 3rd party APIs####
+####Service to fetch users, posts and comments from 3rd party APIs
 1. This project runs a service as soon as launched and fetches users, posts and comments from 3rd party APIs.
 2. Stores user list in master database in collection 'users'.
 3. Creates seperate databases for each users fetched in step 1.
