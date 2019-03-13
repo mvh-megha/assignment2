@@ -21,7 +21,7 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise;
 
 /** connecting to database */
-mongoose.connect("mongodb://localhost:27017/userPosts")
+mongoose.connect("mongodb://localhost:27017/master")
     .then(() => {
         console.log('Succesfully connected to database')
     }).catch((err) => {
@@ -32,8 +32,9 @@ mongoose.connect("mongodb://localhost:27017/userPosts")
 /** Link the router */
 var router = require("./app/routes/mainrouter");
 app.use('/', router);
-
+var { syncData } = require('./helpers/syncDataHelper')
 /** Run the server */
 app.listen(8080, () => {
     console.log("Server is up and running")
+    syncData();
 });

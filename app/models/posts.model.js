@@ -2,9 +2,7 @@
  * This file contains model defination for Posts and comments
  */
 
-const mongoose = require('mongoose');
-
-var PostsSchema = new mongoose.Schema({
+var postSchemaObject = {
     id: {
         type: Number,
         required: true,
@@ -35,8 +33,6 @@ var PostsSchema = new mongoose.Schema({
             type: String
         }
     }]
-});
+}
 
-var Posts = mongoose.model('Posts', PostsSchema);
-
-module.exports = { Posts }
+module.exports = { postSchemaObject }
